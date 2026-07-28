@@ -1,31 +1,20 @@
-# MASFIQUE AHMED — e-portfolio (editable static template)
+Add single-page site with animations, intro-video & CV placeholders.
 
-This is a simple 4-page editable static portfolio:
-- Home (index.html) — profile, photo, summary
-- Education (education.html) — university / college / school timeline and images
-- Project (projects.html) — project timeline, images, add projects
-- Contact (contact.html) — contact details and image
+- Converted site to a single-page layout (index.html) with sections: Home, Education, Projects, Contact.
+- Added AOS (Animate On Scroll) for simple entrance animations.
+- Added an intro video placeholder (a poster + modal). To provide your video upload an MP4 to assets/intro.mp4 or replace the poster with a YouTube embed.
+- Added a placeholder CV at assets/cv.pdf — replace it with your actual CV to allow direct viewing/downloading.
+- Images use placeholder.com placeholders. Replace images by uploading files to the assets/ folder and updating <img> src attributes.
 
-Features
-- Modern responsive UI (HTML + CSS).
-- In-browser editing: click Edit, change text, upload images, Save.
-- Edits persist in the browser (saved to localStorage). No server required.
+How to edit content permanently:
+- Edit files in the repository (recommended): use the GitHub web editor or clone the repo locally and push changes. Example:
+  git clone git@github.com:mash-lang/eportfolio-.git
+  cd eportfolio-
+  # edit files
+  git add .
+  git commit -m "Update site"
+  git push
 
-How to use locally
-1. Download or clone the files to a folder.
-2. Open `index.html` in your browser to preview.
-3. Click Edit on any page to enable editing. Upload images using the "Upload" controls. Click Save to persist changes to localStorage.
-
-Deploy to GitHub Pages
-1. Create a new repository (e.g., `e-portfolio`) and push these files to the default branch (often `main`).
-2. In the repo settings > Pages, set the site source to the repository's root on the default branch.
-3. Visit `https://<your-username>.github.io/<repo>/`
-
-Want me to create the GitHub repo and push these files?
-- I can create the repository under your account `mash-lang` and push this scaffold. Tell me the repo name and whether you want it public or private, and I will push everything and optionally enable GitHub Pages.
-
-Next suggestions (I can do on request)
-- Add a downloadable resume PDF and social links.
-- Add serverless contact form integration (Netlify/Vercel).
-- Add a small CMS (Netlify CMS or Git-backed CMS) so edits survive across devices and are stored in the repo.
-- Convert to an SSG (Astro/Next.js) for easier content management and SEO.
+If you want, I can also:
+- Upload your provided CV and video and wire them into the site.
+- Configure a small CMS so you can edit content via a web UI.

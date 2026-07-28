@@ -4,61 +4,184 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>MASFIQUE AHMED — Portfolio</title>
+
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header class="topbar">
     <div class="container topbar-inner">
-      <a class="brand" href="index.html">MASFIQUE AHMED</a>
+      <a class="brand" href="#home">MASFIQUE AHMED</a>
       <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="education.html">Education</a>
-        <a href="projects.html">Project</a>
-        <a href="contact.html">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <section class="hero card">
-      <div class="hero-left">
+    <section id="home" class="hero card">
+      <div class="hero-left" data-aos="fade-right">
         <div class="avatar-wrap">
-          <img id="profileImage" src="" alt="Profile picture" />
+          <img id="profileImage" src="https://via.placeholder.com/300x300?text=Profile+Image" alt="Profile picture" />
         </div>
       </div>
 
-      <div class="hero-right">
+      <div class="hero-right" data-aos="fade-left">
         <h1 id="fullName">MASFIQUE AHMED</h1>
         <p id="location" class="muted">Dhaka, Bangladesh</p>
 
         <h3>PROFESSIONAL PROFILE</h3>
-        <p id="profileText">
-An ambitious and highly organized final-year Computer Science &amp; Engineering student at American International University-Bangladesh (AIUB). Combines robust theoretical knowledge in object-oriented programming (C#, Java) and normalized database architecture (MySQL) with distinct real-world practical operations. Demonstrates comprehensive expertise in managing real-time data integrity, server-side parameter tracking, and active API integrations during premier competitive events. Eager to bring precise data modeling, backend programming skills, and a strong problem-solving mindset to the team at Paradise Auto Service.
-        </p>
+        <p id="profileText">An ambitious and highly organized final-year Computer Science &amp; Engineering student at American International University-Bangladesh (AIUB). Combines robust theoretical knowledge in object-oriented programming (C#, Java) and normalized database architecture (MySQL) with distinct real-world practical operations. Demonstrates comprehensive expertise in managing real-time data integrity, server-side parameter tracking, and active API integrations during premier competitive events. Eager to bring precise data modeling, backend programming skills, and a strong problem-solving mindset to the team at Paradise Auto Service.</p>
 
         <div class="quicklinks">
-          <a href="projects.html" class="btn">View projects</a>
-          <a href="education.html" class="btn ghost">Education</a>
+          <a href="#projects" class="btn">View projects</a>
+          <a href="#education" class="btn ghost">Education</a>
+          <a href="assets/cv.pdf" class="btn primary" download>Download CV</a>
         </div>
+
+        <div class="intro-video" style="margin-top:1rem">
+          <div class="video-poster" id="videoPoster" aria-label="Intro video">
+            <img src="https://via.placeholder.com/800x450?text=Intro+video+placeholder" alt="Intro video poster" />
+            <button id="playVideo" class="play-btn">▶</button>
+          </div>
+          <p class="muted small">Intro video placeholder — upload your MP4 to assets/ or replace with a YouTube embed. Click play for details.</p>
+        </div>
+
       </div>
     </section>
 
-    <section class="card small">
-      <h3>Quick summary</h3>
-      <ul id="summaryList">
-        <li>Final-year CSE student (AIUB)</li>
-        <li>C#, Java, MySQL, API integrations</li>
-        <li>Backend &amp; data modeling focus</li>
-      </ul>
+    <section id="education" class="card" data-aos="fade-up">
+      <h2>EDUCATION TIMELINE</h2>
+
+      <article class="edu-item">
+        <div class="edu-meta">
+          <h3>B.Sc. in Computer Science &amp; Engineering (8th Semester Undergraduate)</h3>
+          <p class="muted">American International University-Bangladesh (AIUB) | January 2024 – Present</p>
+          <p class="muted">CGPA: 3.33</p>
+        </div>
+        <div class="edu-image">
+          <img src="https://via.placeholder.com/300x180?text=AIUB+image" alt="AIUB image" />
+        </div>
+      </article>
+
+      <article class="edu-item">
+        <div class="edu-meta">
+          <h3>Higher Secondary Certificate (HSC) – Science Background</h3>
+          <p class="muted">Tongi Government College | Completed: 2021</p>
+          <p class="muted">GPA: 4.50</p>
+        </div>
+        <div class="edu-image">
+          <img src="https://via.placeholder.com/300x180?text=Tongi+College" alt="Tongi Government College" />
+        </div>
+      </article>
+
+      <article class="edu-item">
+        <div class="edu-meta">
+          <h3>Secondary School Certificate (SSC) – Science Background</h3>
+          <p class="muted">Manipur High School and College | Completed: 2019</p>
+          <p class="muted">GPA: 4.50</p>
+        </div>
+        <div class="edu-image">
+          <img src="https://via.placeholder.com/300x180?text=Manipur+High+School" alt="Manipur High School" />
+        </div>
+      </article>
+
+      <hr />
+
+      <h3>CHRONOLOGICAL TECHNICAL ENGAGEMENTS</h3>
+      <div id="techEngagements">
+        <div class="card small item">
+          <strong>In-Game API Configurator – Free Fire World Series (FFWS) 2026 Spring</strong>
+          <p class="muted">Timeline: May 2026 – June 2026</p>
+          <p>Oversaw full-scale backend network alignments and live match configuration profiles leading up to the Grand Finals phase in June 2026.</p>
+        </div>
+
+        <div class="card small item">
+          <strong>In-Game API Configurator – Free Fire Pro League (FFBPL) Season 1</strong>
+          <p class="muted">Timeline: March 2026 – April 2026</p>
+          <p>Engineered live broadcast metrics integrations and parsed concurrent performance values safely into structured JSON data models.</p>
+        </div>
+
+        <div class="card small item">
+          <strong>In-Game API Configurator – Free Fire Road to Glory (FF RTG)</strong>
+          <p class="muted">Timeline: February 2026</p>
+          <p>Maintained network data hooks and resolved system response drops immediately to preserve player statistic data tracking loops under tight timelines.</p>
+        </div>
+
+        <div class="card small item">
+          <strong>In-Game API Configurator – Free Fire World Series Bangladesh (FFWS BD) 2025</strong>
+          <p class="muted">Timeline: September 2025 – October 2025</p>
+          <p>Administered complex endpoint variables and validated multi-team payload parameters throughout a month-long premier live competitive league.</p>
+        </div>
+      </div>
+
     </section>
+
+    <section id="projects" class="card" data-aos="fade-up">
+      <h2>ACADEMIC &amp; INDEPENDENT PROJECT TIMELINE</h2>
+
+      <div class="project-card">
+        <div class="project-image"><img src="https://via.placeholder.com/420x260?text=Project+1" alt="Project 1"></div>
+        <div class="project-body">
+          <h3>The Student Success and Image Authenticity System (Academic Project – C# &amp; .NET)</h3>
+          <p class="muted">2025</p>
+          <p>Developed an object-oriented desktop information architecture using C# to safely audit student progress trends and authentic asset tracking operations.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image"><img src="https://via.placeholder.com/420x260?text=Project+2" alt="Project 2"></div>
+        <div class="project-body">
+          <h3>Hospital Management System (Academic Course Project – MySQL)</h3>
+          <p class="muted">2024</p>
+          <p>Architected a fully normalized multi-table database environment in MySQL to handle concurrent patient data records, institutional scheduling, and relational mapping layers.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image"><img src="https://via.placeholder.com/420x260?text=Project+3" alt="Project 3"></div>
+        <div class="project-body">
+          <h3>In-Game API Configurator – Free Fire World Series (FFWS) 2026 Spring</h3>
+          <p class="muted">May 2026 – June 2026</p>
+          <p>Oversaw full-scale backend network alignments and live match configuration profiles leading up to the Grand Finals phase.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="contact" class="card" data-aos="fade-up">
+      <h2>Contact</h2>
+      <p class="muted">Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p class="muted">Phone: +880-1xx-xxxxxxx</p>
+      <p class="muted">Location: Dhaka, Bangladesh</p>
+    </section>
+
   </main>
 
   <footer class="footer">
     <div class="container">
-      © <span id="footerName">MASFIQUE AHMED</span> — built with a lightweight template.
+      © MASFIQUE AHMED
     </div>
   </footer>
 
+  <!-- Video modal -->
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <button id="closeModal" class="modal-close">✕</button>
+      <div id="modalBody">
+        <h3>Intro video placeholder</h3>
+        <p>Replace this with your MP4 uploaded to <code>assets/intro.mp4</code> or replace the markup with a YouTube embed.
+        </p>
+        <p>When you have a video, upload it to <code>assets/intro.mp4</code> in the repo and replace this content with an HTML5 video tag or an iframe embed.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
