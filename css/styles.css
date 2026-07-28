@@ -43,7 +43,7 @@ body{margin:0;background:linear-gradient(180deg,var(--bg),#fff);color:var(--mute
   .edu-image img{width:100%;height:auto}
 }
 /* video poster and modal fixes */
-.video-poster{position:relative;display:inline-block;max-width:420px;border-radius:10px;overflow:hidden}
+.video-poster{position:relative;display:block;max-width:420px;width:100%;margin:0.75rem 0;border-radius:10px;overflow:hidden}
 .video-poster img{width:100%;height:auto;display:block}
 /* modal */
 .modal{display:none;position:fixed;inset:0;background:rgba(10,12,20,0.6);z-index:120;align-items:center;justify-content:center;padding:1rem}
