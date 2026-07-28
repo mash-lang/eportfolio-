@@ -1,26 +1,46 @@
-// Viewer-only single-page interactions: initialize AOS and handle video modal
+// Viewer-only single-page interactions: initialize AOS and handle video modal + CV modal
 (function(){
   // Initialize AOS (animations on scroll)
   if (window.AOS) AOS.init({duration:600,once:true});
 
   // Modal handling for intro video placeholder
   const play = document.getElementById('playVideo');
-  const modal = document.getElementById('videoModal');
+  const videoModal = document.getElementById('videoModal');
   const close = document.getElementById('closeModal');
-  if (play && modal){
+  if (play && videoModal){
     play.addEventListener('click', ()=>{
-      modal.style.display = 'flex';
+      videoModal.style.display = 'flex';
     })
   }
-  if (close && modal){
+  if (close && videoModal){
     close.addEventListener('click', ()=>{
-      modal.style.display = 'none';
+      videoModal.style.display = 'none';
     })
   }
   // Click outside modal content closes
-  if (modal){
-    modal.addEventListener('click', (e)=>{
-      if (e.target === modal) modal.style.display = 'none';
+  if (videoModal){
+    videoModal.addEventListener('click', (e)=>{
+      if (e.target === videoModal) videoModal.style.display = 'none';
+    })
+  }
+
+  // CV modal handling
+  const viewCvBtn = document.getElementById('viewCvBtn');
+  const cvModal = document.getElementById('cvModal');
+  const closeCv = document.getElementById('closeCv');
+  if (viewCvBtn && cvModal){
+    viewCvBtn.addEventListener('click', ()=>{
+      cvModal.style.display = 'flex';
+    })
+  }
+  if (closeCv && cvModal){
+    closeCv.addEventListener('click', ()=>{
+      cvModal.style.display = 'none';
+    })
+  }
+  if (cvModal){
+    cvModal.addEventListener('click', (e)=>{
+      if (e.target === cvModal) cvModal.style.display = 'none';
     })
   }
 

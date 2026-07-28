@@ -40,7 +40,8 @@
         <div class="quicklinks">
           <a href="#projects" class="btn">View projects</a>
           <a href="#education" class="btn ghost">Education</a>
-          <a href="assets/cv.pdf" class="btn primary" download>Download CV</a>
+          <button id="viewCvBtn" class="btn">View CV</button>
+          <a href="/Chronological_CV_Masfique_Ahmed.pdf" class="btn primary" target="_blank" rel="noopener" download>Download CV</a>
         </div>
 
         <div class="intro-video" style="margin-top:1rem">
@@ -61,7 +62,6 @@
         <div class="edu-meta">
           <h3>B.Sc. in Computer Science &amp; Engineering (8th Semester Undergraduate)</h3>
           <p class="muted">American International University-Bangladesh (AIUB) | January 2024 – Present</p>
-          <p class="muted">CGPA: 3.33</p>
         </div>
         <div class="edu-image">
           <img src="https://via.placeholder.com/300x180?text=AIUB+image" alt="AIUB image" />
@@ -72,7 +72,6 @@
         <div class="edu-meta">
           <h3>Higher Secondary Certificate (HSC) – Science Background</h3>
           <p class="muted">Tongi Government College | Completed: 2021</p>
-          <p class="muted">GPA: 4.50</p>
         </div>
         <div class="edu-image">
           <img src="https://via.placeholder.com/300x180?text=Tongi+College" alt="Tongi Government College" />
@@ -83,7 +82,6 @@
         <div class="edu-meta">
           <h3>Secondary School Certificate (SSC) – Science Background</h3>
           <p class="muted">Manipur High School and College | Completed: 2019</p>
-          <p class="muted">GPA: 4.50</p>
         </div>
         <div class="edu-image">
           <img src="https://via.placeholder.com/300x180?text=Manipur+High+School" alt="Manipur High School" />
@@ -155,9 +153,11 @@
 
     <section id="contact" class="card" data-aos="fade-up">
       <h2>Contact</h2>
-      <p class="muted">Email: <a href="mailto:you@example.com">you@example.com</a></p>
-      <p class="muted">Phone: +880-1xx-xxxxxxx</p>
+      <p class="muted">Email: <a href="mailto:masfique223@gmail.com">masfique223@gmail.com</a></p>
+      <p class="muted">Phone: +88017369814</p>
       <p class="muted">Location: Dhaka, Bangladesh</p>
+      <p class="muted">Facebook: <a href="https://www.facebook.com/masfique.ahmed07/" target="_blank" rel="noopener">masfique.ahmed07</a></p>
+      <p class="muted">LinkedIn: <a href="https://www.linkedin.com/in/masfique-ahmed-29a840279/" target="_blank" rel="noopener">masfique-ahmed</a></p>
     </section>
 
   </main>
@@ -177,6 +177,20 @@
         <p>Replace this with your MP4 uploaded to <code>assets/intro.mp4</code> or replace the markup with a YouTube embed.
         </p>
         <p>When you have a video, upload it to <code>assets/intro.mp4</code> in the repo and replace this content with an HTML5 video tag or an iframe embed.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CV modal -->
+  <div id="cvModal" class="modal">
+    <div class="modal-content">
+      <button id="closeCv" class="modal-close">✕</button>
+      <div id="cvBody">
+        <h3>Curriculum Vitae — Masfique Ahmed</h3>
+        <iframe id="cvFrame" src="/Chronological_CV_Masfique_Ahmed.pdf" style="width:100%;height:600px;border:0" title="CV"></iframe>
+        <p style="margin-top:0.6rem">
+          <a id="cvDownload" class="btn primary" href="/Chronological_CV_Masfique_Ahmed.pdf" target="_blank" rel="noopener" download>Download CV</a>
+        </p>
       </div>
     </div>
   </div>
