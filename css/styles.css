@@ -18,7 +18,8 @@ body{margin:0;background:linear-gradient(180deg,var(--bg),#fff);color:var(--mute
 .hero-right{flex:1}
 .avatar-wrap{position:relative;width:260px;height:260px;border-radius:14px;overflow:hidden;background:linear-gradient(135deg,#eef6ff,#f7fbff);display:flex;align-items:center;justify-content:center}
 .avatar-wrap img{width:100%;height:100%;object-fit:cover;display:block}
-.play-btn{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:rgba(11,132,255,0.9);color:#fff;border:none;border-radius:999px;padding:0.7rem 1rem;font-size:20px;cursor:pointer}
+.title{font-size:1.1rem;color:#24303f;margin:0.25rem 0 0.6rem;font-weight:600}
+.play-btn{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:rgba(11,132,255,0.9);color:#fff;border:none;border-radius:999px;padding:0.7rem 1rem;font-size:20px;cursor:pointer;z-index:3}
 .upload-label{display:none}
 .actions{display:none}
 .btn{border:1px solid rgba(15,23,42,0.06);background:#fff;padding:0.45rem 0.7rem;border-radius:8px;cursor:pointer;text-decoration:none;color:inherit}
@@ -41,6 +42,9 @@ body{margin:0;background:linear-gradient(180deg,var(--bg),#fff);color:var(--mute
   .project-image img{width:100%;height:auto}
   .edu-image img{width:100%;height:auto}
 }
+/* video poster and modal fixes */
+.video-poster{position:relative;display:inline-block;max-width:420px;border-radius:10px;overflow:hidden}
+.video-poster img{width:100%;height:auto;display:block}
 /* modal */
 .modal{display:none;position:fixed;inset:0;background:rgba(10,12,20,0.6);z-index:120;align-items:center;justify-content:center;padding:1rem}
 .modal-content{background:#fff;border-radius:10px;max-width:900px;width:100%;padding:1rem;position:relative}
