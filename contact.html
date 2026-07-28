@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — MASFIQUE AHMED</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">MASFIQUE AHMED</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="education.html">Education</a>
+        <a href="projects.html">Project</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <div class="actions">
+        <button id="contactEditToggle" class="btn">Edit</button>
+        <button id="contactSaveBtn" class="btn primary">Save</button>
+        <button id="contactResetBtn" class="btn ghost">Reset</button>
+      </div>
+
+      <h2>Contact Me</h2>
+      <p>You can make the contact details editable and upload a contact photo here.</p>
+
+      <div class="contact-grid">
+        <div>
+          <label for="email">Email</label>
+          <div contenteditable="false" id="contactEmail">you@example.com</div>
+
+          <label for="phone">Phone</label>
+          <div contenteditable="false" id="contactPhone">+880-1xx-xxxxxxx</div>
+
+          <label for="location">Location</label>
+          <div contenteditable="false" id="contactLocation">Dhaka, Bangladesh</div>
+        </div>
+
+        <div class="contact-photo">
+          <img id="contact-img" src="" alt="Contact image" />
+          <label class="upload-label small">
+            <input id="contactImageInput" type="file" accept="image/*" />
+            Upload
+          </label>
+        </div>
+      </div>
+
+      <hr />
+      <p class="muted">Tip: If you host this site on GitHub Pages and want a working contact form, I can add a serverless form handler (Netlify/Vercel functions) or link a form provider.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© MASFIQUE AHMED</div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
