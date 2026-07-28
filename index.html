@@ -28,7 +28,11 @@
     <section id="home" class="hero card">
       <div class="hero-left" data-aos="fade-right">
         <div class="avatar-wrap">
-          <img id="profileImage" src="assets/profile.jpg" alt="Masfique Ahmed — profile picture" />
+          <picture>
+            <source srcset="assets/profile-400.webp" type="image/webp" media="(max-width:480px)">
+            <source srcset="assets/profile-400.jpg" media="(max-width:480px)">
+            <img id="profileImage" src="assets/profile.jpg" alt="Masfique Ahmed — profile picture" width="800" height="800" />
+          </picture>
         </div>
       </div>
 
@@ -167,10 +171,7 @@
   <footer class="footer footer-full" aria-label="Site footer">
     <div class="container footer-inner">
       <div class="footer-left">
-        <strong>Contact</strong>
-        <p class="muted">Email: <a href="mailto:masfique223@gmail.com">masfique223@gmail.com</a></p>
-        <p class="muted">Phone: +88017369814</p>
-        <p class="muted">Location: Dhaka, Bangladesh</p>
+        <strong>Thanks for visiting</strong>
       </div>
       <div class="footer-center">
         <strong>Follow</strong>
